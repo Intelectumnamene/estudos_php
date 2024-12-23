@@ -1,0 +1,106 @@
+Aqui está uma lista das principais funções em PHP, organizadas por categorias. Elas são amplamente utilizadas e essenciais para o desenvolvimento web:
+
+---
+
+### **1. Manipulação de Strings**
+- `strlen($str)` – Retorna o comprimento de uma string.
+- `strtolower($str)` – Converte uma string para letras minúsculas.
+- `strtoupper($str)` – Converte uma string para letras maiúsculas.
+- `ucfirst($str)` – Converte a primeira letra para maiúscula.
+- `lcfirst($str)` – Converte a primeira letra para minúscula.
+- `substr($str, $start, $length)` – Retorna uma parte de uma string.
+- `strpos($haystack, $needle)` – Encontra a posição de uma substring na string.
+- `str_replace($search, $replace, $subject)` – Substitui partes de uma string.
+- `trim($str)` – Remove espaços em branco do início e do final de uma string.
+- `htmlspecialchars($str)` – Converte caracteres especiais em entidades HTML.
+
+---
+
+### **2. Manipulação de Arrays**
+- `array_push($array, $value)` – Adiciona um ou mais elementos ao final de um array.
+- `array_pop($array)` – Remove o último elemento de um array.
+- `array_shift($array)` – Remove o primeiro elemento de um array.
+- `array_unshift($array, $value)` – Adiciona um ou mais elementos no início do array.
+- `in_array($value, $array)` – Verifica se um valor existe em um array.
+- `array_merge($array1, $array2)` – Combina dois ou mais arrays.
+- `array_keys($array)` – Retorna todas as chaves de um array.
+- `array_values($array)` – Retorna todos os valores de um array.
+- `count($array)` – Retorna o número de elementos em um array.
+
+---
+
+### **3. Funções de Data e Hora**
+- `date($format)` – Formata uma data/hora.
+- `time()` – Retorna o timestamp atual.
+- `strtotime($time, $now)` – Converte uma string de data/hora em um timestamp.
+- `mktime($hour, $minute, $second, $month, $day, $year)` – Cria um timestamp.
+
+**Exemplo de formato comum em `date`:**
+```php
+date("Y-m-d H:i:s"); // Retorna a data no formato "2024-12-10 15:30:45"
+```
+
+---
+
+### **4. Manipulação de Arquivos**
+- `file_get_contents($filename)` – Lê o conteúdo de um arquivo para uma string.
+- `file_put_contents($filename, $data)` – Escreve dados em um arquivo.
+- `fopen($filename, $mode)` – Abre um arquivo.
+- `fread($handle, $length)` – Lê o conteúdo de um arquivo aberto.
+- `fwrite($handle, $string)` – Escreve no arquivo aberto.
+- `fclose($handle)` – Fecha um arquivo aberto.
+- `unlink($filename)` – Remove um arquivo.
+
+---
+
+### **5. Funções de Banco de Dados (MySQLi)**
+- `mysqli_connect($host, $user, $password, $dbname)` – Conecta ao banco de dados.
+- `mysqli_query($conn, $query)` – Executa uma consulta SQL.
+- `mysqli_fetch_assoc($result)` – Retorna uma linha de resultados como um array associativo.
+- `mysqli_num_rows($result)` – Retorna o número de linhas de um resultado.
+- `mysqli_close($conn)` – Fecha a conexão com o banco de dados.
+
+---
+
+### **6. Funções de Controle de Fluxo**
+- `isset($var)` – Verifica se uma variável está definida.
+- `empty($var)` – Verifica se uma variável está vazia.
+- `is_numeric($var)` – Verifica se uma variável é numérica.
+- `die($message)` – Encerra o script com uma mensagem.
+- `exit($message)` – Outra forma de encerrar o script.
+
+---
+
+### **7. Funções de Sessão e Cookies**
+- `session_start()` – Inicia uma sessão.
+- `$_SESSION['key'] = $value` – Define uma variável de sessão.
+- `session_destroy()` – Destroi a sessão.
+- `setcookie($name, $value, $expire)` – Define um cookie.
+- `$_COOKIE['key']` – Acessa o valor de um cookie.
+
+---
+
+### **8. Funções Matemáticas**
+- `abs($number)` – Retorna o valor absoluto de um número.
+- `round($number, $precision)` – Arredonda um número para a precisão especificada.
+- `ceil($number)` – Arredonda um número para cima.
+- `floor($number)` – Arredonda um número para baixo.
+- `rand($min, $max)` – Gera um número aleatório entre os valores especificados.
+
+---
+
+### **9. Upload e Manipulação de Arquivos**
+- `move_uploaded_file($tmp_name, $destination)` – Move um arquivo enviado para o destino desejado.
+- `is_uploaded_file($filename)` – Verifica se o arquivo foi enviado via HTTP POST.
+
+---
+
+### **10. Outras Funções Úteis**
+- `var_dump($var)` – Exibe informações sobre uma variável.
+- `print_r($array)` – Imprime um array de forma legível.
+- `json_encode($array)` – Converte um array ou objeto para uma string JSON.
+- `json_decode($json, $assoc)` – Converte uma string JSON para um array ou objeto.
+
+---
+
+Essas funções cobrem grande parte do que você precisa para trabalhar com PHP em desenvolvimento de aplicações web. Se precisar de exemplos para funções específicas ou mais categorias, é só pedir!

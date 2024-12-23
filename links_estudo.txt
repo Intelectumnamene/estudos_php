@@ -1,0 +1,9 @@
+https://www.w3schools.com/php/php_superglobals_get.asp
+
+https://www.w3schools.com/php/php_date.asp
+
+https://www.php.net/manual/pt_BR/datetime.format.php
+
+https://www.w3schools.com/php/php_cookies.asp
+
+https://stackoverflow.com/questions/2138527/php-curl-and-http-post-example
